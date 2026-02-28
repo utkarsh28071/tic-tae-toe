@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Ultra | Play Now</title>
+    <style>
+        :root {
+            --bg: #071029;
+            --accent: #ffb86b;
+            --text: #e6eef8;
+        }
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header { padding: 60px 20px; }
+        h1 { font-size: 3rem; margin: 0; background: linear-gradient(90deg, #ffb86b, #ff6b6b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-img { width: 80%; max-width: 400px; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); margin: 30px auto; }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(90deg, #ffb86b, #ff6b6b);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: scale(1.05); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 50px 10px; max-width: 1000px; margin: auto; }
+        .feat-card { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; }
+        footer { margin-top: auto; padding: 20px; opacity: 0.6; font-size: 0.9rem; }
+        footer a { color: var(--text); text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe Ultra</h1>
+        <p>A modern, mobile-optimized classic.</p>
+        <div style="margin-top: 40px;">
+            <a href="game.html" class="btn">Play Game Now</a>
+        </div>
+    </header>
+
+    <div class="features">
+        <div class="feat-card">
+            <h3>🤖 Smart AI</h3>
+            <p>Challenge yourself against Easy, Medium, or Hard difficulty levels.</p>
+        </div>
+        <div class="feat-card">
+            <h3>⏱️ Blitz Mode</h3>
+            <p>Play with a move timer to keep the game intense.</p>
+        </div>
+        <div class="feat-card">
+            <h3>📱 Mobile Ready</h3>
+            <p>Designed with large touch targets for the best mobile experience.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Your Name/Studio. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
